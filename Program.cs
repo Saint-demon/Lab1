@@ -14,9 +14,10 @@ namespace Lab1
             int value = Convert.ToInt32(Console.ReadLine());
 
 
-            int n = 9, min, max;        
+            int n = 9, min, max, even = 0;        
 
             int[] arr = new int[10];
+            int[] evenArr = new int[10];
             
             for (int i = 0; i < arr.Length; i++) //Ввод массива
             {
@@ -51,6 +52,22 @@ namespace Lab1
             }
             Console.WriteLine("Максимум");
             Console.WriteLine($"arr[{n}] = {max}");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    evenArr[even] = arr[i];
+                    even++;
+                }
+            }
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (evenArr[i] != 0)
+                {
+                    Console.WriteLine($"evenArr[{i}] = {evenArr[i]}");
+                }
+            }
 
 
         }
