@@ -52,6 +52,7 @@ namespace Lab1
             }
             Console.WriteLine("Максимум");
             Console.WriteLine($"arr[{n}] = {max}");
+            //TODO: сюда 3ий пункт добавить
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] % 2 == 0)
@@ -60,7 +61,7 @@ namespace Lab1
                     even++;
                 }
             }
-            //TODO: сюда 3ий пункт 
+            
 
             for (int i = 0; i < arr.Length; i++)
             {
