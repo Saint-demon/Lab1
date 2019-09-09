@@ -60,6 +60,7 @@ namespace Lab1
                     even++;
                 }
             }
+            //TODO: сюда 3ий пункт 
 
             for (int i = 0; i < arr.Length; i++)
             {
